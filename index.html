@@ -35,7 +35,7 @@
       <div class="slide">
         <!-- ADULTS -->
         <div class="content">
-        <h2 class="header"><span>Adults</span> Suday Attendance</h2>
+        <h2 class="header"><span>Adults</span> Sunday Attendance</h2>
             <div>
               <div class="ct-chart-adult-attendance ct-minor-sixth"></div>
             </div>
@@ -52,7 +52,7 @@
       <div class="slide">
         <!-- KIDS -->
         <div class="content">
-        <h2 class="header"><span>Kids</span> Suday Attendance</h2>
+        <h2 class="header"><span>Kids</span> Sunday Attendance</h2>
           <div>
             <div class="ct-chart-kids-attendance ct-minor-sixth"></div>
           </div>
@@ -69,7 +69,7 @@
       <div class="slide">
         <!-- YOUTH -->
         <div class="content">
-        <h2 class="header"><span>Youth</span> Suday Attendance</h2>
+        <h2 class="header"><span>Youth</span> Sunday Attendance</h2>
           <div>
             <div class="ct-chart-youth-attendance ct-minor-sixth"></div>
           </div>
@@ -158,6 +158,42 @@
       </div>
     </section>
 
+    <!-- NEW CHRISTIANS -->
+    <section class="section" data-anchor="new-christians" data-tooltip="New Christians">
+      <div class="slide">
+        <!-- EARLY SERVICE NC -->
+        <div class="content">
+        <h2 class="header"><span>10:00 AM</span> Service</h2>
+          <div>
+            <div class="ct-chart-new-christians-early ct-minor-sixth"></div>
+          </div>
+          <div class="legend">
+            <ul>
+              <li><img src="images/purple.svg" alt="Worship"><p>Hands Raised</p></li>
+              <li><img src="images/red.svg" alt="Production"><p>Bibles Given</p></li>
+              <li><img src="images/yellow.svg" alt="Production"><p>New Christian Cards Reveied</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+        <h2 class="header"><span>11:30 AM</span> Service</h2>
+          <div>
+            <div class="ct-chart-new-christians-late ct-minor-sixth"></div>
+          </div>
+          <div class="legend">
+            <ul>
+              <li><img src="images/purple.svg" alt="Worship"><p>Hands Raised</p></li>
+              <li><img src="images/red.svg" alt="Production"><p>Bibles Given</p></li>
+              <li><img src="images/yellow.svg" alt="Production"><p>New Christian Cards Reveied</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 
     <section class="section" data-anchor="future" data-tooltip="The Future">
@@ -236,7 +272,7 @@
           [189, 228, 222, 222, 198, 237, 218, 195, 211, 270],
 
           // COMBINED Adults
-          [354, 395, 389, 358, 382, 413, 381, 348, 368, 429],
+          [354, 395, 389, 358, 382, 413, 381, 348, 368, 429]
         ]
         }, {
           plugins: [
@@ -256,7 +292,7 @@
           [20, 16, 11, 26, 16, 26, 33, 27, 15, 21],
 
           // COMBINED Kids
-          [39, 30, 22, 41, 27, 42, 53, 38, 26, 34],
+          [39, 30, 22, 41, 27, 42, 53, 38, 26, 34]
         ]
         }, {
           plugins: [
@@ -276,7 +312,7 @@
           [7, 7, 12, 7, 7, 7, 12, 8, 7, 5],
 
           // COMBINED Youth
-          [10, 14, 14, 9, 14, 12, 17, 12, 8, 12],
+          [10, 14, 14, 9, 14, 12, 17, 12, 8, 12]
         ]
         }, {
           plugins: [
@@ -347,7 +383,7 @@
           [2, 1, 1],
 
           // TOTAL SERVED
-          [55, 99, 89],
+          [55, 99, 89]
         ]
 
         }, {
@@ -364,7 +400,7 @@
           [15, 22, 14, 21, 21, 23, 17, 21, 17, 27, 31],
 
           // Total Spend
-          [77.65, 100.36, 61.66, 93.89, 97.72, 98.65, 80.23, 95.56, 74.57, 125.96, 138.56 ],
+          [77.65, 100.36, 61.66, 93.89, 97.72, 98.65, 80.23, 95.56, 74.57, 125.96, 138.56 ]
         ]
 
         }, {
@@ -374,6 +410,48 @@
            })
           ]
         });
+      new Chartist.Line('.ct-chart-new-christians-early', {
+        labels: ['OCT 1', 'OCT 8', 'OCT 15', 'OCT 22', 'OCT 29', 'NOV 5', 'NOV 12', 'NOV 19', 'NOV 26', 'DEC 3', 'DEC 10'],
+        series: [
+          // Hands Raised
+          [8, 6, 0, 5, 6, 13, 10, 0, 7, 6, 8],
+
+          // Bibles Given
+          [1, 0, 0, 0, 4, 2, 0, 0, 5, 13, 13],
+
+          // NC Cards
+          [0, 0, 0, 0, 3, 4, 0, 4, 3, 8, 5]
+
+        ]
+
+        }, {
+          plugins: [
+           ctPointLabels({
+               textAnchor: 'middle'
+           })
+          ]
+        });
+      new Chartist.Line('.ct-chart-new-christians-late', {
+        labels: ['OCT 1', 'OCT 8', 'OCT 15', 'OCT 22', 'OCT 29', 'NOV 5', 'NOV 12', 'NOV 19', 'NOV 26', 'DEC 3', 'DEC 10'],
+        series: [
+          // Hands Raised
+          [10, 10, 0, 13, 6, 13, 5, 0, 6, 14, 17],
+
+          // Bibles Given
+          [1, 1, 0, 4, 4, 0, 0, 0, 0, 0, 0],
+
+          // NC Cards
+          [3, 2, 0, 3, 3, 1, 0, 0, 0, 0, 0]
+        ]
+
+        }, {
+          plugins: [
+           ctPointLabels({
+               textAnchor: 'middle'
+           })
+          ]
+        });
+
 
 
     </script>
