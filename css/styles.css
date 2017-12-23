@@ -12,9 +12,6 @@ footer{min-height:0 !important;text-align:center}footer a:first-of-type{display:
 
 /*GENERAL*/
 .section {
-  background-image: url('images/landing.jpg');
-}
-.section {
   background-color: #303030;
 }
 .section:nth-child(2n) {
@@ -71,6 +68,20 @@ h1 {
 .ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut {
   stroke: #90FFCA !important;
 }
+.ct-series-e .ct-bar, .ct-series-e .ct-line, .ct-series-e .ct-point, .ct-series-e .ct-slice-donut {
+  stroke: #FFFFFF !important;
+}
+.ct-series-f .ct-bar, .ct-series-f .ct-line, .ct-series-f .ct-point, .ct-series-f .ct-slice-donut {
+  stroke: #FFF4BC !important;
+}
+.ct-series-g .ct-bar, .ct-series-g .ct-line, .ct-series-g .ct-point, .ct-series-g .ct-slice-donut {
+  stroke: #6900FF !important;
+}
+.ct-series-h .ct-bar, .ct-series-h .ct-line, .ct-series-h .ct-point, .ct-series-h .ct-slice-donut {
+  stroke: #00ABFF !important;
+}
+
+
 .ct-line {
   stroke-width: 2px !important;
 }

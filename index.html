@@ -25,7 +25,8 @@
     <!-- LANDING -->
     <div class="content landing-content">
       <img class="logo" src="images/logo.svg" alt="People Church">
-      <h1>People Church Report <br> Q4 2017</h1>
+      <h1>People Church Reports</h1>
+      <!-- <h2 class="header"><span>Q4 2017</span> People Church Report</h2> -->
     </div>
     </header>
 
@@ -109,6 +110,30 @@
               <li><img src="images/red.svg" alt="Adults"><p>Adults</p></li>
               <li><img src="images/yellow.svg" alt="Families"><p>Families</p></li>
               <li><img src="images/teal.svg" alt="Interest Groups"><p>Interest Groups</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVE TEAM ATTENDANCE -->
+    <section class="section" data-anchor="serve-team" data-tooltip="Serve Team">
+      <div class="content">
+        <div class="content">
+        <h2 class="header"><span>Serve Team</span> Attendance</h2>
+          <div>
+            <div class="ct-chart-serve-team-attendance ct-minor-sixth"></div>
+          </div>
+          <div class="legend">
+            <ul>
+              <li><img src="images/purple.svg" alt="Worship"><p>Worship</p></li>
+              <li><img src="images/red.svg" alt="Production"><p>Production</p></li>
+              <li><img src="images/yellow.svg" alt="Connections"><p>Connections</p></li>
+              <li><img src="images/teal.svg" alt="Kids"><p>Kids</p></li>
+              <li><img src="images/white.svg" alt="Hosts"><p>Hosts</p></li>
+              <li><img src="images/dark-purple.svg" alt="Creative"><p>Creative</p></li>
+              <li><img src="images/cream.svg" alt="New Christians"><p>New Christians</p></li>
+              <li><img src="images/blue.svg" alt="Total"><p>Total Served</p></li>
             </ul>
           </div>
         </div>
@@ -270,6 +295,41 @@
 
           // INTEREST GROUPS
           [17, 0, 12, 3, 24, 8, 12, 3, 12, 0]
+        ]
+
+        }, {
+          plugins: [
+           ctPointLabels({
+               textAnchor: 'middle'
+           })
+          ]
+        });
+      new Chartist.Line('.ct-chart-serve-team-attendance', {
+        labels: ['OCT 3', 'OCT 10', 'OCT 17'],
+        series: [
+          // WORSHIP TEAM
+          [11, 10, 10],
+
+          // PRODUCTION TEAM
+          [0, 5, 5],
+
+          // CONNECTIONS TEAM
+          [28, 24, 19],
+
+          // KIDS TEAM
+          [4, 5, 0],
+
+          // HOSTS TEAM
+          [7, 6, 6],
+
+          // CREATIVE TEAM
+          [3, 0, 0],
+
+          // NEW CHRISTIANS TEAM
+          [2, 1, 1],
+
+          // TOTAL SERVED
+          [55, 99, 89],
         ]
 
         }, {
