@@ -106,7 +106,7 @@ h1 {
 }
 .legend li {
   display: inline-block;
-  margin-right: 50px;
+  margin: 0px 25px;
 }
 @media only screen and (max-width: 600px) {
   .legend li {
