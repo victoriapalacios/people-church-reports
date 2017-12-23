@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+  <head>
+    <title>People Church Report - 4th Quarter 2017</title>
+    <meta name="description" content="People Church Report Website">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css"> -->
+    <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  </head>
+
+  <body class="pulse-no-js">
+    <script type="text/javascript">(function () {document.body.className = '';document.body.children[0].remove()})()</script>
+    <article>
+    <div id="fullpage">
+
+    <header class="section" data-anchor="top" data-tooltip="People Church Report Website">
+    <!-- LANDING -->
+    <div class="content landing-content">
+      <img class="logo" src="images/logo.svg" alt="People Church">
+      <h1>People Church Report <br> Q4 2017</h1>
+    </div>
+    </header>
+
+      <!-- SUNDAY ATTENDANCE -->
+      <section class="section poll" data-anchor="sunday-attendance" data-tooltip="Sunday Attendance">
+      <div class="slide">
+        <!-- ADULTS -->
+        <div class="content">
+        <h2 class="header"><span>Adults</span> Suday Attendance</h2>
+            <div>
+              <div class="ct-chart-adult-attendance ct-minor-sixth"></div>
+            </div>
+            <div class="legend">
+              <ul>
+                <li><img src="images/purple.svg" alt="10:00 AM Service"><p>10:00 AM </p></li>
+                <li><img src="images/red.svg" alt="11:30 AM Service"><p>11:30 AM </p></li>
+                <li><img src="images/yellow.svg" alt="Combined Services"><p>Combined </p></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <!-- KIDS -->
+        <div class="content">
+        <h2 class="header"><span>Kids</span> Suday Attendance</h2>
+          <div>
+            <div class="ct-chart-kids-attendance ct-minor-sixth"></div>
+          </div>
+          <div class="legend">
+            <ul>
+              <li><img src="images/purple.svg" alt="10:00 AM Service"><p>10:00 AM </p></li>
+              <li><img src="images/red.svg" alt="11:30 AM Service"><p>11:30 AM </p></li>
+              <li><img src="images/yellow.svg" alt="Combined Services"><p>Combined </p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <!-- YOUTH -->
+        <div class="content">
+        <h2 class="header"><span>Youth</span> Suday Attendance</h2>
+          <div>
+            <div class="ct-chart-youth-attendance ct-minor-sixth"></div>
+          </div>
+          <div class="legend">
+            <ul>
+              <li><img src="images/purple.svg" alt="10:00 AM Service"><p>10:00 AM </p></li>
+              <li><img src="images/red.svg" alt="11:30 AM Service"><p>11:30 AM </p></li>
+              <li><img src="images/yellow.svg" alt="Combined Services"><p>Combined </p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  <section class="section" data-anchor="future" data-tooltip="The Future">
+  <div class="step">
+    <div class="content">
+      <h2 class="header">The Future</h2>
+      <div><p>
+  Your support of <em>Cards Against Humanity Saves America</em> is paying for an entire year of monthly public opinion polls.
+  We’ll keep asking Americans about the important issues of the day, like income inequality, political polarization,
+  and the whole Trump thing. You can find all our results so far, including the raw data, here.
+</p>
+
+<ul class="downloads">
+  <li><a href="/downloads/201709-CAH_PulseOfTheNation.csv" download="">September 2017</a></li>
+  <li><a href="/downloads/201710-CAH_PulseOfTheNation.csv" download="">October 2017</a></li>
+  <li><a href="/downloads/201711-CAH_PulseOfTheNation.csv" download="">November 2017</a></li>
+</ul>
+
+<p>
+  Are you a social scientist or academic who studies public opinion? Want to ask Americans something that no funding agency or
+  internal review board would approve in a million years? Maybe we can help!
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSePvOHRxEPQ8AaNgCu8JAGzKJEagOwalM33VccakeHvBxBHDQ/viewform" target="_blank">Apply online</a>
+  to get your questions included in future polls.
+</p>
+</div>
+    </div>
+  </div>
+</section>
+  <footer class="section fp-auto-height" data-anchor="bottom" data-tooltip="Contact Us">
+  <div class="content">
+    <a href="https://cardsagainsthumanity.com">Cards Against Humanity</a><br>
+    <a href="mailto:mail@cardsagainsthumanity.com?subject=The Pulse of the Nation" class="contact">Contact Us</a>
+  </div>
+</footer>
+</div>
+
+<span id="current-poll"></span>
+
+<span class="desktop"></span>
+
+    </article>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/site-5bcf2d8f.js"></script>
+    <script async src="js_1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-45683028-11');
+    </script>
+
+    <script>
+      // Below is the plugin to labels to each datapoint
+      function ctPointLabels(options) {
+          return function ctPointLabels(chart) {
+              var defaultOptions = {
+                  labelClass: 'ct-label',
+                  labelOffset: {
+                      x: 0,
+                      y: -10
+                  },
+                  textAnchor: 'middle'
+              };
+
+              options = Chartist.extend({}, defaultOptions, options);
+
+              if (chart instanceof Chartist.Line) {
+                  chart.on('draw', function (data) {
+                      if (data.type === 'point') {
+                          data.group.elem('text', {
+                              x: data.x + options.labelOffset.x,
+                              y: data.y + options.labelOffset.y,
+                              style: 'text-anchor: ' + options.textAnchor
+                          }, options.labelClass).text(data.value.y);  // 07.11.17 added ".y"
+                      }
+                  });
+              }
+          }
+      }
+
+
+      new Chartist.Line('.ct-chart-adult-attendance', {
+        labels: ['OCT 8', 'OCT 15', 'OCT 22', 'OCT 29', 'NOV 5', 'NOV 12', 'NOV 19', 'NOV 26', 'DEC 3', 'DEC 10'],
+        series: [
+          // 10 AM Adults
+          [165, 167, 167, 136, 184, 176, 163, 153, 157, 159],
+
+          // 11:30 AM Adults
+          [189, 228, 222, 222, 198, 237, 218, 195, 211, 270],
+
+          // COMBINED Adults
+          [354, 395, 389, 358, 382, 413, 381, 348, 368, 429],
+        ]
+        }, {
+          plugins: [
+           ctPointLabels({
+               textAnchor: 'middle'
+           })
+          ]
+        });
+
+      new Chartist.Line('.ct-chart-kids-attendance', {
+        labels: ['OCT 8', 'OCT 15', 'OCT 22', 'OCT 29', 'NOV 5', 'NOV 12', 'NOV 19', 'NOV 26', 'DEC 3', 'DEC 10'],
+        series: [
+          // 10 AM Kids
+          [19, 14, 11, 15, 11, 16, 20, 11, 11, 13],
+
+          // 11:30 AM Kids
+          [20, 16, 11, 26, 16, 26, 33, 27, 15, 21],
+
+          // COMBINED Kids
+          [39, 30, 22, 41, 27, 42, 53, 38, 26, 34],
+        ]
+        }, {
+          plugins: [
+           ctPointLabels({
+               textAnchor: 'middle'
+           })
+          ]
+        });
+
+      new Chartist.Line('.ct-chart-youth-attendance', {
+        labels: ['OCT 8', 'OCT 15', 'OCT 22', 'OCT 29', 'NOV 5', 'NOV 12', 'NOV 19', 'NOV 26', 'DEC 3', 'DEC 10'],
+        series: [
+          // 10 AM Youth
+          [3, 7, 2, 2, 7, 5, 5, 4, 1, 7],
+
+          // 11:30 AM Youth
+          [7, 7, 12, 7, 7, 7, 12, 8, 7, 5],
+
+          // COMBINED Youth
+          [10, 14, 14, 9, 14, 12, 17, 12, 8, 12],
+        ]
+        }, {
+          plugins: [
+           ctPointLabels({
+               textAnchor: 'middle'
+           })
+          ]
+        });
+
+
+    </script>
+
+  </body>
+</html>
