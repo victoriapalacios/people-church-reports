@@ -30,7 +30,7 @@
     </header>
 
       <!-- SUNDAY ATTENDANCE -->
-      <section class="section poll" data-anchor="sunday-attendance" data-tooltip="Sunday Attendance">
+    <section class="section poll" data-anchor="sunday" data-tooltip="Sunday">
       <div class="slide">
         <!-- ADULTS -->
         <div class="content">
@@ -83,40 +83,57 @@
       </div>
     </section>
 
+    <!-- STAFFY ATTENDANCE -->
+    <section class="section" data-anchor="staffy" data-tooltip="Staffy">
+      <div class="content">
+        <div class="content">
+        <h2 class="header"><span>Staffy</span> Attendance</h2>
+          <div>
+            <div class="ct-chart-staffy-attendance ct-minor-sixth"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROW GROUP ATTENDANCE -->
+    <section class="section" data-anchor="grow-group" data-tooltip="Grow Groups">
+      <div class="content">
+        <div class="content">
+        <h2 class="header"><span>Grow Group</span> Attendance</h2>
+          <div>
+            <div class="ct-chart-grow-group-attendance ct-minor-sixth"></div>
+          </div>
+          <div class="legend">
+            <ul>
+              <li><img src="images/purple.svg" alt="Young Adults"><p>Young Adults</p></li>
+              <li><img src="images/red.svg" alt="Adults"><p>Adults</p></li>
+              <li><img src="images/yellow.svg" alt="Families"><p>Families</p></li>
+              <li><img src="images/teal.svg" alt="Interest Groups"><p>Interest Groups</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-  <section class="section" data-anchor="future" data-tooltip="The Future">
-  <div class="step">
-    <div class="content">
-      <h2 class="header">The Future</h2>
-      <div><p>
-  Your support of <em>Cards Against Humanity Saves America</em> is paying for an entire year of monthly public opinion polls.
-  We’ll keep asking Americans about the important issues of the day, like income inequality, political polarization,
-  and the whole Trump thing. You can find all our results so far, including the raw data, here.
-</p>
 
-<ul class="downloads">
-  <li><a href="/downloads/201709-CAH_PulseOfTheNation.csv" download="">September 2017</a></li>
-  <li><a href="/downloads/201710-CAH_PulseOfTheNation.csv" download="">October 2017</a></li>
-  <li><a href="/downloads/201711-CAH_PulseOfTheNation.csv" download="">November 2017</a></li>
-</ul>
+    <section class="section" data-anchor="future" data-tooltip="The Future">
+      <div class="step">
+        <div class="content">
+          <h2 class="header">The Future</h2>
+          <div>
+            <p>hey</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p>
-  Are you a social scientist or academic who studies public opinion? Want to ask Americans something that no funding agency or
-  internal review board would approve in a million years? Maybe we can help!
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSePvOHRxEPQ8AaNgCu8JAGzKJEagOwalM33VccakeHvBxBHDQ/viewform" target="_blank">Apply online</a>
-  to get your questions included in future polls.
-</p>
-</div>
-    </div>
-  </div>
-</section>
-  <footer class="section fp-auto-height" data-anchor="bottom" data-tooltip="Contact Us">
-  <div class="content">
-    <a href="https://cardsagainsthumanity.com">Cards Against Humanity</a><br>
-    <a href="mailto:mail@cardsagainsthumanity.com?subject=The Pulse of the Nation" class="contact">Contact Us</a>
-  </div>
-</footer>
+    <footer class="section fp-auto-height" data-anchor="bottom" data-tooltip="Contact Us">
+      <div class="content">
+        <a href="https://www.peoplechurch.org/">People Church</a>
+      </div>
+    </footer>
+
 </div>
 
 <span id="current-poll"></span>
@@ -218,6 +235,43 @@
           // COMBINED Youth
           [10, 14, 14, 9, 14, 12, 17, 12, 8, 12],
         ]
+        }, {
+          plugins: [
+           ctPointLabels({
+               textAnchor: 'middle'
+           })
+          ]
+        });
+
+      new Chartist.Line('.ct-chart-staffy-attendance', {
+        labels: ['OCT 4', 'OCT 11', 'OCT 18', 'OCT 25', 'NOV 1', 'NOV 8', 'NOV 15', 'NOV 22', 'NOV 29', 'DEC 6'],
+        series: [
+          [44, 37, 47, 48, 38, 46, 56, 0, 42, 56]
+        ]
+        }, {
+          plugins: [
+           ctPointLabels({
+               textAnchor: 'middle'
+           })
+          ]
+        });
+
+      new Chartist.Line('.ct-chart-grow-group-attendance', {
+        labels: ['OCT 2', 'OCT 9', 'OCT 16', 'OCT 23', 'OCT 30', 'NOV 6', 'NOV 13', 'NOV 20', 'NOV 27', 'DEC 4'],
+        // YOUNG ADULTS GROW GROUP
+        series: [
+          [6, 27, 40, 58, 39, 62, 64, 0, 56, 43],
+
+          // ADULTS GROW GROUP
+          [0, 3, 0, 5, 0, 0, 0, 0, 0, 0],
+
+          // FAMILIES GROW GROUP
+          [6, 0, 6, 14, 7, 16, 5, 0, 8, 13],
+
+          // INTEREST GROUPS
+          [17, 0, 12, 3, 24, 8, 12, 3, 12, 0]
+        ]
+
         }, {
           plugins: [
            ctPointLabels({
