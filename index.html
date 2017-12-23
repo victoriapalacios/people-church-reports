@@ -140,6 +140,24 @@
       </div>
     </section>
 
+    <!-- LYFT USE -->
+    <section class="section" data-anchor="lyft-usage" data-tooltip="Lyft Usage">
+      <div class="content">
+        <div class="content">
+        <h2 class="header"><span>LYFT</span> USAGE</h2>
+          <div>
+            <div class="ct-chart-lyft-usage ct-minor-sixth"></div>
+          </div>
+          <div class="legend">
+            <ul>
+              <li><img src="images/purple.svg" alt="Worship"><p>Number of Redemptions</p></li>
+              <li><img src="images/red.svg" alt="Production"><p>Total Spend ($)</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 
     <section class="section" data-anchor="future" data-tooltip="The Future">
@@ -330,6 +348,23 @@
 
           // TOTAL SERVED
           [55, 99, 89],
+        ]
+
+        }, {
+          plugins: [
+           ctPointLabels({
+               textAnchor: 'middle'
+           })
+          ]
+        });
+      new Chartist.Line('.ct-chart-lyft-usage', {
+        labels: ['OCT 1', 'OCT 8', 'OCT 15', 'OCT 22', 'OCT 29', 'NOV 5', 'NOV 12', 'NOV 19', 'NOV 26', 'DEC 3', 'DEC 10'],
+        series: [
+          // Number of times Lyft Code Used
+          [15, 22, 14, 21, 21, 23, 17, 21, 17, 27, 31],
+
+          // Total Spend
+          [77.65, 100.36, 61.66, 93.89, 97.72, 98.65, 80.23, 95.56, 74.57, 125.96, 138.56 ],
         ]
 
         }, {
