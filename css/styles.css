@@ -17,7 +17,7 @@ footer{min-height:0 !important;text-align:center}footer a:first-of-type{display:
 .section:nth-child(2n) {
   background-color: #1B1B1B;
 }
-h1, h2 h4, p, a, li, span, label, .ct-label {
+h1, h2, h3, h4, p, a, li, span, label, .ct-label, table {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -49,6 +49,8 @@ footer a {
 h1 {
   text-transform: uppercase;
   font-size: 4rem;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /*GRAPH STYLES*/
@@ -57,6 +59,7 @@ h1 {
 }
 .ct-label {
   fill: #FFFFFF !important;
+  /*font-size: 10px !important;*/
 }
 .ct-grid {
   /*stroke: rgba(255,255,255,.2) !important;*/
@@ -65,9 +68,22 @@ h1 {
 .ct-series-a .ct-bar, .ct-series-a .ct-line, .ct-series-a .ct-point, .ct-series-a .ct-slice-donut {
   stroke: #CFAEFF !important;
 }
+
+.ct-series-a .ct-area, .ct-series-a .ct-slice-donut-solid, .ct-series-a .ct-slice-pie {
+  fill: #CFAEFF !important;
+}
+
+
 .ct-series-d .ct-bar, .ct-series-d .ct-line, .ct-series-d .ct-point, .ct-series-d .ct-slice-donut {
   stroke: #90FFCA !important;
 }
+.ct-series-d .ct-area, .ct-series-d .ct-slice-donut-solid, .ct-series-d .ct-slice-pie {
+  fill: #90FFCA !important;
+}
+.ct-series-e .ct-area, .ct-series-e .ct-slice-donut-solid, .ct-series-e .ct-slice-pie {
+  fill: #6900FF !important;
+}
+
 .ct-series-e .ct-bar, .ct-series-e .ct-line, .ct-series-e .ct-point, .ct-series-e .ct-slice-donut {
   stroke: #FFFFFF !important;
 }
@@ -116,4 +132,21 @@ h1 {
   .legend p {
     margin-bottom: 15px;
   }
+}
+
+
+/*STAT STYLES*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #303030;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #303030;
 }
