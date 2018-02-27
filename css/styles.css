@@ -139,12 +139,18 @@ h1 {
 table {
   border-collapse: collapse;
   width: 100%;
+  overflow-x: auto;
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  margin: auto;
 }
 
 td, th {
   border: 1px solid #303030;
   text-align: left;
   padding: 8px;
+  width: 500px;
 }
 
 tr:nth-child(even) {
