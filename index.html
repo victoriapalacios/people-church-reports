@@ -221,6 +221,36 @@
         </div>
       </div>
 
+      <div class="slide">
+        <!-- Average Yearly Sunday Attendance  -->
+        <div class="content">
+        <h2 class="header"><span>Average Yearly</span> Sunday Attendance</h2>
+          <div>
+            <div class="ct-chart-average-yearly-attendance ct-minor-sixth"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <!-- Average Yearly Sunday Attendance  -->
+        <div class="content">
+        <h2 class="header"><span>Average Yearly</span> Sunday Attendance</h2>
+          <div>
+            <div class="ct-chart-monthly-attendance-per-year ct-minor-sixth"></div>
+          </div>
+          <div class="legend">
+            <ul>
+              <li><img src="images/purple.svg" alt="2012"><p>2012</p></li>
+              <li><img src="images/red.svg" alt="2013"><p>2013</p></li>
+              <li><img src="images/yellow.svg" alt="2014"><p>2014</p></li>
+              <li><img src="images/teal.svg" alt="2015"><p>2015</p></li>
+              <li><img src="images/cream.svg" alt="2016"><p>2016</p></li>
+              <li><img src="images/white.svg" alt="2017"><p>2017</p></li>
+              <li><img src="images/dark-purple.svg" alt="2018"><p>2018</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
     </section>
 
@@ -239,7 +269,7 @@
     <!-- GROW GROUP ATTENDANCE -->
     <section class="section" data-anchor="grow-group" data-tooltip="Grow Groups">
       <div class="content">
-<!--         <div class="content">
+<!--    <div class="content">
         <h2 class="header"><span>Grow Group</span> Attendance</h2>
           <div>
             <div class="ct-chart-grow-group-attendance ct-minor-sixth"></div>
@@ -505,9 +535,50 @@
         }
       });
 
+      new Chartist.Line('.ct-chart-average-yearly-attendance', {
+        labels: ['2012', '2013', '2014', '2015', '2016', '2017', '2018'],
+        series: [
+          [98, 132, 163, 191, 306, 413, 526],
+        ]
+        }, {
+          plugins: [
+           ctPointLabels({
+               textAnchor: 'middle'
+           })
+          ]
+        });
 
+      new Chartist.Line('.ct-chart-monthly-attendance-per-year', {
+        labels: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEPT', 'OCT', 'NOV', 'DEC',],
+        series: [
+          // 2012
+          [90, 102, 117, 159, 106, 95, 78, 89, 68, 85, 83, 100],
 
+          // 2013
+          [105, 147, 142, 165, 138, 132, 127, 117, 113, 124, 140, 132],
 
+          // 2014
+          [131, 190, 163, 194, 184, 154, 144, 142, 136, 179, 171, 172],
+
+          // 2015
+          [159, 162, 165, 182, 214, 173, 187, 179, 177, 227, 243, 216],
+
+          // 2016
+          [240, 276, 314, 346, 316, 248, 294, 313, 346, 339, 312, 312],
+
+          // 2017
+          [361, 426, 378, 506, 380, 407, 404, 395, 400, 418, 435, 430],
+
+          // 2018
+          [547, 490, 487, 563],
+        ]
+        }, {
+          plugins: [
+           ctPointLabels({
+               textAnchor: 'middle'
+           })
+          ]
+        });
 
       new Chartist.Line('.ct-chart-staffy-attendance', {
         labels: ['JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER', 'JANUARY', 'FEBRUARY'],
